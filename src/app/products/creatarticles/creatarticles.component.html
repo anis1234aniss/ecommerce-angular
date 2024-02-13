@@ -1,0 +1,35 @@
+<h2>Ajouter un article</h2>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Réference</label>
+    <input type="text" class="form-control" id="Réference" name ="Réference"[(ngModel)]= "produit.reference" placeholder="Réference">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Désignation</label>
+    <input type="text" class="form-control" id="Désignation" name ="Désignation"[(ngModel)]= "produit.designation" placeholder="Désignation">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Prix</label>
+    <input type="text" class="form-control" id="Prix" name ="Prix"[(ngModel)]= "produit.prix" placeholder="Prix">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Marque</label>
+    <input type="text" class="form-control" id="marque"  name ="Marque"[(ngModel)]= "produit.marque" placeholder="marque">
+  </div>  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">qte stock</label>
+    <input type="text" class="form-control" id="qte stock" name ="qtestock"[(ngModel)]= "produit.qtestock"  placeholder="qte stock">
+  </div>  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">sous categorie</label>
+    <input type="text" class="form-control" id="scategorie"  name ="scategorie"[(ngModel)]= "produit.scategoriID" placeholder="sous categorie">
+  </div>  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Image</label>
+    <input type="text" class="form-control" id="imageart"  name ="Désignation"[(ngModel)]= "produit.imageart" placeholder="Image">
+  </div>  
+<div>
+    <button type="button" class="btn btn-success" (click)="sauvegarder()">Enregistrer</button>
+</div>
+<div>
+    <button type="button" class="btn btn-danger" >Annuler</button>
+</div>

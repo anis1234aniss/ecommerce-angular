@@ -1,0 +1,57 @@
+<div>
+    <button type="button" class="btn btn-danger" routerLink="/articles/creatart" >Nouveau</button>
+<table *ngIf="tabproduit.length" datatable class="table table-hover tabel-striped tabel-bordered mb-5" >
+    <thead>
+    <tr>
+    <th>Image</th>
+    <th>Désignation</th>
+    <th>Marque</th>
+    <th>prix</th>
+    <th>qtestock</th>
+    <th>reference</th>
+    
+  
+    
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of tabproduit">
+    <td><img src="{{product.imageart}}" alt="" width="80"  height="80"/></td>
+    
+    <td>{{ product.designation }}</td>
+    <td>{{ product.marque }}</td>
+    <td>{{ product.prix }}</td>
+    <td>{{product.qtestock}}</td>
+    <td>{{product.reference}}</td>
+    
+    
+    <td>
+   
+   
+    </td>
+    <input type="button"
+    value="modifier"
+    class="btn btn-info btn-sm"
+    [routerLink]="['/editarticle/',product._id]">
+    
+    </tr>
+    </tbody>
+    </table>
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
